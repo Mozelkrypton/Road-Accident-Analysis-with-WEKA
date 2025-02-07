@@ -1,0 +1,49 @@
+@relation vehicle_accidents
+
+@attribute Vehicle_driver_relation {Employee, Owner, Unknown}
+@attribute Light_conditions {Daylight, 'Darkness - lights lit'}
+@attribute Weather_conditions {Normal, Raining}
+@attribute Type_of_collision {'Collision with roadside-parked vehicles', 'Vehicle with vehicle collision', 'Collision with roadside objects', 'Collision with animals', 'Other', 'Rollover', 'Fall from vehicles'}
+@attribute Pedestrian_movement {'Not a Pedestrian', 'Crossing from driver\'s nearside', 'Crossing from nearside - masked by parked or stationary vehicle', 'Unknown or other'}
+@attribute Accident_severity {1, 2}
+
+@data
+Employee,Daylight,Normal,'Collision with roadside-parked vehicles','Not a Pedestrian',2
+Employee,Daylight,Normal,'Vehicle with vehicle collision','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with roadside objects','Not a Pedestrian',1
+Employee,'Darkness - lights lit',Normal,'Vehicle with vehicle collision','Not a Pedestrian',2
+Employee,'Darkness - lights lit',Normal,'Vehicle with vehicle collision','Not a Pedestrian',2
+Unknown,Daylight,Normal,'Vehicle with vehicle collision','Not a Pedestrian',2
+Employee,Daylight,Normal,'Vehicle with vehicle collision','Not a Pedestrian',2
+Employee,Daylight,Normal,'Vehicle with vehicle collision','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with roadside-parked vehicles','Crossing from driver\'s nearside',2
+Employee,Daylight,Normal,'Collision with roadside-parked vehicles','Not a Pedestrian',1
+Owner,Daylight,Normal,'Collision with animals','Not a Pedestrian',1
+Employee,Daylight,Normal,'Collision with animals','Not a Pedestrian',1
+Employee,Daylight,Normal,'Collision with animals','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with animals','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with animals','Not a Pedestrian',1
+Employee,'Darkness - lights lit',Raining,'Collision with animals','Not a Pedestrian',1
+Owner,'Darkness - lights lit',Raining,'Collision with animals','Not a Pedestrian',2
+Employee,'Darkness - lights lit',Raining,'Collision with animals','Not a Pedestrian',1
+Employee,'Darkness - lights lit',Raining,'Collision with animals','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with animals','Not a Pedestrian',1
+Employee,Daylight,Normal,'Collision with animals','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with animals','Not a Pedestrian',1
+Employee,Daylight,Normal,'Other','Not a Pedestrian',1
+Employee,Daylight,Normal,'Rollover','Not a Pedestrian',1
+Unknown,Daylight,Normal,'Collision with animals','Not a Pedestrian',2
+Employee,Daylight,Normal,'Rollover','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with animals','Crossing from nearside - masked by parked or stationary vehicle',2
+Employee,Daylight,Normal,'Collision with animals','Not a Pedestrian',2
+Unknown,Daylight,Normal,'Vehicle with vehicle collision','Not a Pedestrian',2
+Employee,Daylight,Normal,'Fall from vehicles','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with roadside-parked vehicles','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with roadside-parked vehicles','Not a Pedestrian',2
+Employee,Daylight,Normal,'Rollover','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with animals','Not a Pedestrian',2
+Employee,Daylight,Normal,'Collision with animals','Not a Pedestrian',2
+Employee,Daylight,Normal,'Fall from vehicles','Unknown or other',2
+Employee,'Darkness - lights lit',Normal,'Collision with roadside-parked vehicles','Not a Pedestrian',2
+Employee,'Darkness - lights lit',Normal,'Collision with animals','Not a Pedestrian',2
+Unknown,'Darkness - lights lit',Normal,'Collision with animals','Not a Pedestrian',2
