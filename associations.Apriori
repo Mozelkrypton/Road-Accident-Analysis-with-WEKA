@@ -1,0 +1,43 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     vehicle_accidents
+Instances:    39
+Attributes:   6
+              Vehicle_driver_relation
+              Light_conditions
+              Weather_conditions
+              Type_of_collision
+              Pedestrian_movement
+              Accident_severity
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.7 (27 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 6
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 5
+
+Size of set of large itemsets L(2): 5
+
+Size of set of large itemsets L(3): 2
+
+Best rules found:
+
+ 1. Light_conditions=Daylight 30 ==> Weather_conditions=Normal 30    <conf:(1)> lift:(1.11) lev:(0.08) [3] conv:(3.08)
+ 2. Light_conditions=Daylight Pedestrian_movement=Not a Pedestrian 27 ==> Weather_conditions=Normal 27    <conf:(1)> lift:(1.11) lev:(0.07) [2] conv:(2.77)
+ 3. Weather_conditions=Normal 35 ==> Pedestrian_movement=Not a Pedestrian 32    <conf:(0.91)> lift:(0.99) lev:(-0.01) [0] conv:(0.67)
+ 4. Vehicle_driver_relation=Employee 33 ==> Weather_conditions=Normal 30    <conf:(0.91)> lift:(1.01) lev:(0.01) [0] conv:(0.85)
+ 5. Vehicle_driver_relation=Employee 33 ==> Pedestrian_movement=Not a Pedestrian 30    <conf:(0.91)> lift:(0.98) lev:(-0.01) [0] conv:(0.63)
+ 6. Light_conditions=Daylight 30 ==> Pedestrian_movement=Not a Pedestrian 27    <conf:(0.9)> lift:(0.97) lev:(-0.02) [0] conv:(0.58)
+ 7. Vehicle_driver_relation=Employee Pedestrian_movement=Not a Pedestrian 30 ==> Weather_conditions=Normal 27    <conf:(0.9)> lift:(1) lev:(0) [0] conv:(0.77)
+ 8. Vehicle_driver_relation=Employee Weather_conditions=Normal 30 ==> Pedestrian_movement=Not a Pedestrian 27    <conf:(0.9)> lift:(0.97) lev:(-0.02) [0] conv:(0.58)
+ 9. Light_conditions=Daylight Weather_conditions=Normal 30 ==> Pedestrian_movement=Not a Pedestrian 27    <conf:(0.9)> lift:(0.97) lev:(-0.02) [0] conv:(0.58)
+10. Light_conditions=Daylight 30 ==> Weather_conditions=Normal Pedestrian_movement=Not a Pedestrian 27    <conf:(0.9)> lift:(1.1) lev:(0.06) [2] conv:(1.35)
+
