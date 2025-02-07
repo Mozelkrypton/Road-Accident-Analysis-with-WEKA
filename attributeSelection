@@ -1,0 +1,34 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     vehicle_accidents
+Instances:    39
+Attributes:   6
+              Vehicle_driver_relation
+              Light_conditions
+              Weather_conditions
+              Type_of_collision
+              Pedestrian_movement
+              Accident_severity
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 18
+	Merit of best subset found:    0.15 
+
+Attribute Subset Evaluator (supervised, Class (nominal): 6 Accident_severity):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 4 : 1
+                     Type_of_collision
+
