@@ -58,4 +58,3 @@ The analysis revealed that **Type\_of\_collision** is a key determinant of accid
 - Increase dataset size for more robust model training.
 - Apply feature engineering to refine prediction accuracy.
 - Test other classification algorithms such as Random Forest and SVM.
-# Road-Accident-Analysis-with-WEKA
